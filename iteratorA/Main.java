@@ -38,11 +38,11 @@ public class Main {
 /*		Säieluokka "MyThread" luo jokaiselle säikeelle erillisen
  * 		iteraattorin.
  * 
- *		Mikäli säikeitä ei synkronoida:
+ *		Mikäli säikeitä ei synkronoida toimimaan vuorotellen:
  * 			ensimmäinen säie toteuttaa ohjelmansa
  * 			ennen seuraavaa säiettä.
  * 
- * 		Jos säikeet synkronoidaan
+ * 		Jos säikeet synkronoidaan toimimaan vuorotellen:
  * 			Voimme saada säikeet toteutumaan rinnakkaisesti.
  * 
  * ---->Käytössä synkronoidut säikeet
