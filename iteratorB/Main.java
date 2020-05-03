@@ -40,14 +40,14 @@ public class Main {
 /*		Säieluokka "MyThread" vastaanottaa säikeiden yhteisen
  * 		iteraattorin.
  * 
- *		Mikäli säikeitä ei synkronoida:
+ *		Mikäli säikeitä ei synkronoida toimimaan vuorotellen:
  * 			
  * 			.Säikeet toimivat epäjärjestyksessä, jolloin
  * 			kokoelman sisältö tulostetaan epämääräisessä
  * 			järjestyksessä.
  * 
  * 		
- * 		Mikäli säikeet synkronoidaan:
+ * 		Mikäli säikeet synkronoidaan toimimaan vuorotellen:
  * 
  * 		- Pääohjelma käyttää kumpaakin säiettä vuorotellen tulostaakseen
  * 			kokoelman järjestyksessä
