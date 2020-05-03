@@ -35,7 +35,7 @@ public class Main {
 	}
 
 }
-/*		Säieluokalla "MyThread" luo jokaiselle säikeelle erillisen
+/*		Säieluokka "MyThread" luo jokaiselle säikeelle erillisen
  * 		iteraattorin.
  * 
  *		Mikäli säikeitä ei synkronoida:
