@@ -37,7 +37,7 @@ public class Main {
 	}
 
 }
-/*		Jos kokoelmaa tehdään muutoksia iteroinnin läpikäynnin aikana 
+/*		Jos kokoelmaan tehdään muutoksia iteroinnin läpikäynnin aikana 
  * 			* Kumpikin säie ilmoittaa virheestä seuraavalla tavalla:
  * 
  * 		Exception in thread "Thread-1" Exception in thread "Thread-0" java.util.ConcurrentModificationException
