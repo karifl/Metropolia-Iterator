@@ -26,8 +26,8 @@ public class Main {
 		books.add(pkd);
 		Iterator<Author> itr = books.iterator();
 		
-		MyThread yin = new MyThread(books, itr);
-		MyThread yang = new MyThread(books, itr);
+		MyThread yin = new MyThread(books, itr, "yin");
+		MyThread yang = new MyThread(books, itr, "yang");
 		
 		yin.start();
 		try { Thread.sleep(10);} catch (Exception e) {}
