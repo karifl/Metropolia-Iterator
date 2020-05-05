@@ -6,12 +6,14 @@ import java.util.LinkedList;
 
 
 public class MyThread extends Thread {
+		private String name;
 		private LinkedList <Author> lista = new LinkedList <Author>();
-		Iterator<Author> it = lista.iterator();
+		private Iterator<Author> it = lista.iterator();
 		
-	public MyThread(LinkedList <Author> x) {
+	public MyThread(LinkedList <Author> x, String name) {
 		this.lista = x;
 		this.it = this.lista.iterator();
+		this.name = name;
 	}	
 	@Override
 	public void run() {
@@ -19,7 +21,7 @@ public class MyThread extends Thread {
 		int i=0;
 		while(it.hasNext()) {
 			Author ark = it.next();
-			System.out.println("Author: " +ark.firstName +" " +ark.lastName + ", Book: "+ ark.book);
+			System.out.println("Thread: "+name+" Author: " +ark.firstName +" " +ark.lastName + ", Book: "+ ark.book);
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
