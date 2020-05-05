@@ -25,9 +25,9 @@ public class Main {
 		books.add(pkd);
 		
 		
-		MyThread yin = new MyThread(books);
+		MyThread yin = new MyThread(books, "yin");
 		
-		MyThread yang = new MyThread(books);
+		MyThread yang = new MyThread(books, "yang");
 		
 		yin.start();
 	
